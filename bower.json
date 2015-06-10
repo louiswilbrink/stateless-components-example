@@ -1,0 +1,15 @@
+{
+  "name": "stateless-components",
+  "version": "0.0.0",
+  "authors": [
+    "Louis Wilbrink <louis.wilbrink@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

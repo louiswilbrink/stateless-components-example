@@ -1,0 +1,8 @@
+.user-profile {
+    position: relative;
+    max-width: 120px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}

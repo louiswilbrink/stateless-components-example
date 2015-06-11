@@ -1,0 +1,8 @@
+<div class="user-profile">
+  <svg ng-if="!isUserLoaded" style="position: absolute; top: 8px; left: 30px;" width="120" height="30">
+    <rect width="80" height="2" style="fill:rgb(199, 193, 196);stroke-width:0;" />
+    <rect y="6" width="80" height="2" style="fill:rgb(199, 193, 196);stroke-width:0;" />
+    <rect y="12" width="80" height="2" style="fill:rgb(199, 193, 196);stroke-width:0;" />
+  </svg>
+  <p style="margin: 0;" ng-if="isUserLoaded">Hello, {{ name }}</p>
+</div>

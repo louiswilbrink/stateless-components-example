@@ -5,10 +5,14 @@ angular.module('myapp').directive('userProfile', function () {
         scope: {},
         restrict: 'E',
         require: ['queryUser'],
-        template: '<div>Hello, {{ name }}</div>',
+        templateUrl: 'user-profile.html',
         link: function (scope, element, attrs) {
-            attrs.$observe('queryUser', function (newVal) {
+              attrs.$observe('queryUser', function (newVal) {
                 scope.name = JSON.parse(newVal).name;
+
+                if (scope.name !== '---') {
+                    scope.isUserLoaded = true;
+                }
             });
         }
     };
